@@ -1,0 +1,10 @@
+#Настраиваем GIT для pre-commit
+
+repos:
+- repo: https://github.com/Suirus777/Terraform_B5.6
+rev: <VERSION> # Get the latest from: https://github.com/Suirus777/Terraform_B5.6
+hooks:
+- id: terraform_fmt
+- id: terraform_docs
+- id: terraform_tflint
+- id: terraform_validate
